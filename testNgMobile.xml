@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="imdbMobileTest" thread-count="1" parallel="tests"
+	verbose="1">
+	<listeners>
+		<listener class-name="com.imdbautomation.utils.TestListener" />
+		<listener class-name="com.imdbautomation.utils.RetryListener" />
+	</listeners>
+	<test name="Sample test on Chrome">
+		<parameter name="deviceType" value="Android"></parameter>
+		<classes>
+			<class name="com.test.apptest.Sampletest" />
+		</classes>
+	</test>
+</suite>

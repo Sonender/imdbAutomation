@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="imdbWebTest" thread-count="1" parallel="tests"
+	verbose="1">
+	<listeners>
+		<listener class-name="com.imdbautomation.utils.TestListener" />
+		-
+		<listener class-name="com.imdbautomation.utils.RetryListener" />
+	</listeners>
+	<test name="Sample test on Chrome">
+		<parameter name="browserType" value="chrome"></parameter>
+		<classes>
+			<class name="com.test.uitest.Sampletest" />
+		</classes>
+	</test>
+</suite>
